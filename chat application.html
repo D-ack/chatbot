@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PINGPAL</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <h1>PINGPAL</h1>
+            <button id="themeToggle" class="theme-toggle-btn">🌙</button>
+        </div>
+
+        <!-- Message List -->
+        <div class="message-container" id="messageList">
+            <!-- Messages will be dynamically added here -->
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typingIndicator" class="typing-indicator">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <!-- Message Input Section -->
+        <div class="message-input-container">
+            <input type="file" id="avatarInput" class="file-input" accept="image/*" />
+            <input type="text" id="messageInput" class="message-input" placeholder="Type a message..." />
+            <button id="sendMessageBtn" class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>
